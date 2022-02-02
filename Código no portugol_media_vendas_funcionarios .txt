@@ -1,0 +1,31 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real janeiro,fevereiro,marco,abril,total_vendas,media_vendas
+		cadeia funcionario
+
+		escreva(" Digite o nome do funcionario: ")
+		leia(funcionario)
+		escreva(" Total de vendas janeiro:R$ ")
+		leia(janeiro)
+		escreva(" Total de vendas fevereiro:R$ ")
+		leia(fevereiro)
+		escreva(" Total de vendas marco:R$ ")
+		leia(marco)
+		escreva(" Total de vendas abril:R$ ")
+		leia(abril)
+
+		total_vendas = (janeiro+fevereiro+marco+abril)
+
+		escreva("\n O funcionario: " + funcionario + " Vendeu de janeiro a abril o total de:R$ " + total_vendas)
+
+		media_vendas = (janeiro+fevereiro+marco+abril)/4
+		
+		escreva("\n\nO funcionário: " + funcionario + " obteve uma media de janeiro a abril de :R$ " + media_vendas)
+
+
+		
+	}
+}
