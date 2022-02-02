@@ -1,3 +1,139 @@
 Link para download do git: https://git-scm.com/download/win
 
-O git bash é onde você irá criar os seus repositórios.
+
+# Introdução ao Git e ao GitHub
+
+Benefícios dessa tecnologia GITHUB:
+
+1. Controle de Versão
+2. Armazenamento em nuvem
+3. Trabalho em equipe
+4. Melhorar seu código
+5. Reconhecimento
+
+O Github funciona como uma espécie de rede social e vem crescendo a cada dia mais.
+
+GUI x CLI - Command line interface
+
+CLS: Limpar tela no windows
+
+Windows                         UNix
+
+- Cd                            - Cd
+- dir                            - Is
+- mkdir                       - mkdir
+- del/rmdir                 - rm-rf
+
+Como o GIT funciona?
+
+SHA (Secure Hash Algorithm) è um conjunto de funções hash criptográficas projetadas pela NSA  Agencia de segurança nacional dos EU). O SHA è uma forma curta de representar um arquivo, o estado de um arquivo.
+
+A encriptação gera conjunto de characteres identificador de 40 dígitos
+
+Se mudar uma virgula ou ponto em um arquivo, muda toda a estrutura e os SHA
+
+O GIT é um sistema de versionamento de código distribuído e seguro.
+
+O GIT HUB vai salvar o seu código, então a autenticação é super importante.
+
+→ Objetos fundamentais:
+
+.Blobs
+
+Blob          Tamanho 42
+
+\0
+
+Ola Mundo
+
+.Trees: Armazenam as blobs- aposntam para os blobs
+
+Tree <tamanho>
+
+\0
+
+blob  sa4d8s   texto.txt
+
+![Captura de tela 2022-01-27 105244.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2c329403-4a9f-45a9-ad5f-40c395c2e376/Captura_de_tela_2022-01-27_105244.png)
+
+.Commits: É o objeto que vai juntar tudo
+
+![Captura de tela 2022-01-27 105407.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e434f192-1a0e-4908-ac71-deb85cafe883/Captura_de_tela_2022-01-27_105407.png)
+
+CHAVE SSH: Forma segura entre a conexão entre duas máquinas, tendo uma chave pública e uma chave privada.
+
+Só vai funcionar se usar o git bach
+
+Iniciando o Git e criando um commit
+
+Comandos:
+
+$ ls e $dir: retorna uma lista com o conteúdo contido naquele diretório específico. serve ara listar pastas.
+
+$ mkdir: criar repositório - (Criar pasta)
+
+ctrl L (lunix) e cls (windows): Limpar diretório
+
+$ pwd: mostra o caminho que foi salvo da pasta
+
+Cd / : possibilita que navegamos entre as pastas
+
+Cd W : Possibilita entrar na pasta windows
+
+flags:
+
+-a: mostra arquivos ocultos
+
+-rf - recursivo - deleta várias pastas iguais dentro da mesma pasta- e force
+
+Gerar “commit” para atrelar um autor lá no final do git:
+
+![Captura de tela 2022-01-11 102622.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8b667716-2ded-463a-ab1a-53be4587770b/Captura_de_tela_2022-01-11_102622.png)
+
+cd.. : Voltar um nível
+
+![Captura de tela 2022-01-11 112123.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/01219d56-937e-4041-a913-dc0885583195/Captura_de_tela_2022-01-11_112123.png)
+
+Markdown: Extensão: .md
+
+Ex: Strogonoff.md
+
+Typora é um programa que irá ler o Markdown.
+
+** **negrito ****
+
+_ *italico _*
+
+Passo a passo no ciclo de vida
+
+Git Init: Ela cria uma pastinha no local desejado e, além disso, inicializa o conceito de git chamado repositório.
+
+Tracked/untracked
+
+![Captura de tela 2022-01-30 153711.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a97942b-337d-4ae3-8e1e-0ef7a49941e9/Captura_de_tela_2022-01-30_153711.png)
+
+git status→ ver como estar o status do arquivo na pasta
+
+ git add→ adicionar na pasta
+
+Git* e Git.→ adiciona todas as mudanças que foram feitas no local
+
+git commit -m “mensagem...”→ serve para deixar uma mensagem
+
+→ Como colocar o nosso repositório dentro do GitHub?
+
+Primeiro criamos dentro do GitHub um repositório e copiamos o link que irá ficar criptografado na plataforma. Depois de copiar, nós vamos em nosso commit e vamos colocar este link, desta maneira:
+
+$ git remote add origin “link”
+
+→ Resolvendo conflitos no github
+
+ 
+
+Para copiar um commit de alguém dentro do GitHub, basta copiar o link e ir no gitbash e usar:
+
+$ git clone link
+
+O command git clone ele faz um clone do repositório remoto em seu repositório local.
+
+Um sistema distribuído é um sistema que possui múltiplas cópias de si mesmo em diferentes locais.
